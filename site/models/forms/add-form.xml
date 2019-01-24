@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form
+		addrulepath="/administrator/components/com_myweb/models/rules"
+>
+	<fieldset
+			name="details"
+			label="COM_MYWEB_MYWEB_DETAILS"
+	>
+		<field
+				name="id"
+				type="hidden"
+		/>
+		<field
+				name="greeting"
+				type="text"
+				label="COM_MYWEB_MYWEB_GREETING_LABEL"
+				description="COM_MYWEB_MYWEB_GREETING_DESC"
+				size="40"
+				class="inputbox"
+				validate="greeting"
+				required="true"
+				hint="COM_MYWEB_MYWEB_GREETING_HINT"
+				default=""
+		/>
+		<field
+				name="greeting2"
+				type="text"
+				label="COM_MYWEB_MYWEB_GREETING_LABEL2"
+				description="COM_MYWEB_MYWEB_GREETING_DESC2"
+				size="40"
+				class="inputbox"
+				validate="greeting"
+				required="true"
+				hint="COM_MYWEB_MYWEB_GREETING_HINT2"
+				default=""
+		/>
+		<fields name="imageinfo" label="COM_MYWEB_MYWEB_IMAGE_LABEL">
+			<field
+					name="image"
+					type="file"
+					label="COM_MYWEB_MYWEB_PICTURE_LABEL"
+					description="COM_MYWEB_MYWEB_PICTURE_DESC"
+					accept="image/*"
+			>
+			</field>
+		</fields>
+		<field
+				name="gallery"
+				type="econa"
+				label="COM_MYWEB_MYWEB_GALLERY_LABEL"
+				description="COM_MYWEB_MYWEB_GALLERY_DESC"
+		>
+		</field>
+		<field
+				name="captcha"
+				type="captcha"
+				label="COM_MYWEB_MYWEB_FIELD_CAPTCHA_LABEL"
+				description="COM_MYWEB_MYWEB_FIELD_CAPTCHA_DESC"
+				validate="captcha"
+		>
+		</field>
+	</fieldset>
+</form>
